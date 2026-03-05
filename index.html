@@ -19,13 +19,17 @@
   <div class="header-right">
     <img src="assets/img/LogoB.png" class="logo">
   </div>
+
+</header>
+
+<main class="login-container">
 <script>
 (function() {
 
 const tokenCorrecto = "cliente-aycardi";
 
 // fecha de expiración (7 marzo 2026 a las 00:00)
-const fechaExpiracion = new Date("2026-03-05T04:48:00");
+const fechaExpiracion = new Date("2026-03-04T00:00:00");
 
 // obtener parámetros del link
 const params = new URLSearchParams(window.location.search);
@@ -55,10 +59,6 @@ if (new Date() > fechaExpiracion) {
 
 })();
 </script>
-</header>
-
-<main class="login-container">
-
   <!-- IZQUIERDA: imagen -->
   <div class="login-image">
     <img src="assets/img/MODELO 3D.png" alt="Modelo 3D">
@@ -89,5 +89,6 @@ if (new Date() > fechaExpiracion) {
 
 </body>
 </html>
+
 
 
