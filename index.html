@@ -5,7 +5,7 @@
 (function() {
 
 const tokenCorrecto = "cliente-aycardi";
-const fechaExpiracion = new Date("2026-03-07T00:00:00");
+const fechaExpiracion = new Date("2026-03-04T00:00:00");
 
 const params = new URLSearchParams(window.location.search);
 const token = params.get("demo");
@@ -48,42 +48,7 @@ if (new Date() > fechaExpiracion) {
 </header>
 
 <main class="login-container">
-<script>
-(function() {
 
-const tokenCorrecto = "cliente-aycardi";
-
-// fecha de expiración (7 marzo 2026 a las 00:00)
-const fechaExpiracion = new Date("2026-03-04T00:00:00");
-
-// obtener parámetros del link
-const params = new URLSearchParams(window.location.search);
-const token = params.get("demo");
-
-// si el token es incorrecto
-if (token !== tokenCorrecto) {
-    document.write(`
-        <div style="font-family:Arial;text-align:center;margin-top:120px">
-            <h1>Acceso restringido</h1>
-            <p>Este enlace no es válido.</p>
-        </div>
-    `);
-    throw new Error("Acceso bloqueado");
-}
-
-// si la demo expiró
-if (new Date() > fechaExpiracion) {
-    document.write(`
-        <div style="font-family:Arial;text-align:center;margin-top:120px">
-            <h1>Demo expirada</h1>
-            <p>La demostración ya no está disponible.</p>
-        </div>
-    `);
-    throw new Error("Demo expirada");
-}
-
-})();
-</script>
   <!-- IZQUIERDA: imagen -->
   <div class="login-image">
     <img src="assets/img/MODELO 3D.png" alt="Modelo 3D">
@@ -114,6 +79,7 @@ if (new Date() > fechaExpiracion) {
 
 </body>
 </html>
+
 
 
 
