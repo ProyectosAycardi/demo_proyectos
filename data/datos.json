@@ -121,7 +121,7 @@
   ],
   "pilotes": [
     {
-      "id": "Tipo 1",
+      "id": "P Tipo 1",
       "seccion": "Ø 0.8 m",
       "cantidad": 8,
       "prof": 23,
@@ -132,7 +132,7 @@
       "peso": 3840.6
     },
     {
-      "id": "Tipo 2",
+      "id": "P Tipo 2",
       "seccion": "Ø 1.0 m",
       "cantidad": 2,
       "prof": 23,
@@ -143,7 +143,7 @@
       "peso": 1549.9
     },
     {
-      "id": "Tipo 3",
+      "id": "P Tipo 3",
       "seccion": "Ø 1.0 m",
       "cantidad": 12,
       "prof": 23,
@@ -154,7 +154,7 @@
       "peso": 9376.2
     },
     {
-      "id": "Tipo 4",
+      "id": "P Tipo 4",
       "seccion": "Ø 0.8 m",
       "cantidad": 11,
       "prof": 23,
@@ -165,7 +165,7 @@
       "peso": 6357.725
     },
     {
-      "id": "Tipo 5",
+      "id": "P Tipo 5",
       "seccion": "Ø 0.9 m",
       "cantidad": 6,
       "prof": 23,
@@ -176,7 +176,7 @@
       "peso": 4504.8
     },
     {
-      "id": "Tipo 6",
+      "id": "P Tipo 6",
       "seccion": "Ø 0.9 m",
       "cantidad": 8,
       "prof": 23,
@@ -984,7 +984,7 @@
   "vigas": [
     {
       "id": "101",
-      "piso": "Cimentacion",
+      "piso": "Cimentación",
       "seccion": "60x60",
       "plano": "1206-EST-2016-PD-ADM-P2-D1",
       "cantidad": 1,
@@ -994,7 +994,7 @@
     },
     {
       "id": "102",
-      "piso": "Cimentacion",
+      "piso": "Cimentación",
       "seccion": "60x60;80x60;50x60;75x60",
       "plano": "1206-EST-2016-PD-ADM-P2-D1",
       "cantidad": 1,
@@ -1004,7 +1004,7 @@
     },
     {
       "id": "103",
-      "piso": "Cimentacion",
+      "piso": "Cimentación",
       "seccion": "30x60",
       "plano": "1206-EST-2016-PD-ADM-P2-D1",
       "cantidad": 2,
@@ -1014,7 +1014,7 @@
     },
     {
       "id": "104",
-      "piso": "Cimentacion",
+      "piso": "Cimentación",
       "seccion": "30x60",
       "plano": "1206-EST-2016-PD-ADM-P2-D1",
       "cantidad": 2,
@@ -1733,6 +1733,7 @@
     }
   ]
 }
+
 
 
 
