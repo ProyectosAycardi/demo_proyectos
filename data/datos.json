@@ -887,7 +887,7 @@
       "longitud": 2.9,
       "plano": "1206-EST-2009-PD-ADM-DES. MUR",
       "cantidad": 1,
-      "piso": "Piso 7",
+      "piso": "Piso 6",
       "resistencia": 21,
       "volumen": 50,
       "peso": 0
@@ -898,7 +898,7 @@
       "longitud": 5.23,
       "plano": "1206-EST-2006-PD-ADM-DES. COL Y MUR",
       "cantidad": 2,
-      "piso": "Piso 8",
+      "piso": "Piso 6",
       "resistencia": 21,
       "volumen": 99,
       "peso": 0
@@ -909,7 +909,7 @@
       "longitud": 6.87,
       "plano": "1206-EST-2007-PD-ADM-DES. MUR",
       "cantidad": 1,
-      "piso": "Piso 9",
+      "piso": "Piso 6",
       "resistencia": 21,
       "volumen": 40,
       "peso": 0
@@ -920,7 +920,7 @@
       "longitud": 6.88,
       "plano": "1206-EST-2007-PD-ADM-DES. MUR",
       "cantidad": 1,
-      "piso": "Piso 10",
+      "piso": "Piso 6",
       "resistencia": 21,
       "volumen": 36,
       "peso": 0
@@ -931,7 +931,7 @@
       "longitud": 3.05,
       "plano": "1206-EST-2007-PD-ADM-DES. MUR",
       "cantidad": 4,
-      "piso": "Piso 11",
+      "piso": "Piso 6",
       "resistencia": 21,
       "volumen": 93,
       "peso": 0
@@ -942,7 +942,7 @@
       "longitud": 8.32,
       "plano": "1206-EST-2008-PD-ADM-DES. MUR",
       "cantidad": 1,
-      "piso": "Piso 12",
+      "piso": "Piso 6",
       "resistencia": 21,
       "volumen": 24,
       "peso": 0
@@ -953,7 +953,7 @@
       "longitud": 8.32,
       "plano": "1206-EST-2008-PD-ADM-DES. MUR",
       "cantidad": 1,
-      "piso": "Piso 13",
+      "piso": "Piso 6",
       "resistencia": 21,
       "volumen": 33,
       "peso": 0
@@ -964,7 +964,7 @@
       "longitud": 3.38,
       "plano": "1206-EST-2008-PD-ADM-DES. MUR",
       "cantidad": 1,
-      "piso": "Piso 14",
+      "piso": "Piso 6",
       "resistencia": 21,
       "volumen": 30,
       "peso": 0
@@ -975,7 +975,7 @@
       "longitud": 3.05,
       "plano": "1206-EST-2009-PD-ADM-DES. MUR",
       "cantidad": 1,
-      "piso": "Piso 15",
+      "piso": "Piso 6",
       "resistencia": 21,
       "volumen": 53,
       "peso": 0
@@ -1733,6 +1733,7 @@
     }
   ]
 }
+
 
 
 
