@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <script>
+(function() {
+
+const tokenCorrecto = "cliente-aycardi";
+const fechaExpiracion = new Date("2026-03-07T00:00:00");
+
+const params = new URLSearchParams(window.location.search);
+const token = params.get("demo");
+
+// Bloqueo por token
+if (token !== tokenCorrecto) {
+  document.write("<h2 style='font-family:Arial;text-align:center;margin-top:120px'>Acceso restringido</h2>");
+  window.stop();
+  throw new Error("Acceso bloqueado");
+}
+
+// Bloqueo por fecha
+if (new Date() > fechaExpiracion) {
+  document.write("<h2 style='font-family:Arial;text-align:center;margin-top:120px'>Demo expirada</h2>");
+  window.stop();
+  throw new Error("Demo expirada");
+}
+
+})();
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acceso al proyecto</title>
@@ -89,6 +114,7 @@ if (new Date() > fechaExpiracion) {
 
 </body>
 </html>
+
 
 
 
