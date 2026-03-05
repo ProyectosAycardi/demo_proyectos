@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+
+<!-- FRANJA SUPERIOR -->
+<header class="header">
+  <!-- Flecha atrás -->
+  <button id="btnCerrarSesion" onclick="window.location.href='index.html'" class="btn-logout" title="Cerrar sesión">
+    ⬅️ Salir
+  </button>
+
+  <!-- Títulos -->
+  <div class="header-center">
+    <h1 id="tituloProyecto"></h1>
+    <h2 id="tituloSeccion"></h2>
+  </div>
+
+  <!-- Logo -->
+  <div class="header-right">
+    <img src="assets/img/LogoB.png" class="logo">
+  </div>
+</header>
+
+<div id="barraProgreso" class="barra-progreso hidden">
+
+  <div class="bloque-donut">
+    <canvas id="donutDiseno" width="90" height="90"></canvas>
+    <span>Control documental</span>
+  </div>
+
+  <div class="bloque-donut">
+    <canvas id="donutDibujo" width="90" height="90"></canvas>
+    <span>Avance modelación BIM</span>
+  </div>
+
+</div>
+
+
+
+<!-- MENÚ -->
+<main>
+
+  <div class="menu-seccion">
+    <h3 class="menu-titulo">Documentación</h3>
+    <div class="menu-grid">
+      <a class="card" href="planos.html" data-seccion="base">
+          <img src="assets/img/Planos.png">
+          <span>Planos y cantidades</span>
+      </a>
+
+      <a class="card" href="parametros.html" data-seccion="base">
+          <img src="assets/img/Modelo3D.png">
+          <span>Información del proyecto</span>
+      </a>    
+    </div>
+  </div>
+
+    <div class="menu-seccion">
+    <h3 class="menu-titulo">Elementos de cimentación</h3>
+    <div class="menu-grid">
+      <a class="card" href="cimentacion.html?tipo=pilotes" data-seccion="estructural">
+          <img src="assets/img/pilotes.png">
+          <span>Pilotes</span>
+      </a>
+
+      <a class="card" href="cimentacion.html?tipo=contencion" data-seccion="estructural">
+          <img src="assets/img/contencion.png">
+          <span>Contención</span>
+      </a>
+
+      <a class="card" href="cimentacion.html?tipo=vigas" data-seccion="estructural">
+          <img src="assets/img/vigas.png">
+          <span>Vigas cimentación</span>
+      </a>
+
+      <a class="card" href="cimentacion.html?tipo=losas" data-seccion="estructural">
+          <img src="assets/img/losacim.png">
+          <span>Losa cimentación</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="menu-seccion">
+    <h3 class="menu-titulo">Elementos superestructura</h3>
+    <div class="menu-grid">
+      <a class="card" href="elementos.html?tipo=columnas" data-seccion="estructural">
+          <img src="assets/img/columnas.png">
+          <span>Columnas</span>
+      </a>
+
+      <a class="card" href="elementos.html?tipo=muros" data-seccion="estructural">
+          <img src="assets/img/muros.png">
+          <span>Muros</span>
+      </a>
+
+      <a class="card" href="elementos.html?tipo=vigas" data-seccion="estructural">
+          <img src="assets/img/vigas.png">
+          <span>Vigas</span>
+      </a>
+
+      <a class="card" href="elementos.html?tipo=losas" data-seccion="estructural">
+          <img src="assets/img/losa.png">
+          <span>Losa de Entrepiso</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="menu-seccion">
+    <h3 class="menu-titulo">Información adicional</h3>
+    <div class="menu-grid">
+      <a class="card" href="info.html" data-seccion="info" style="display:none;">
+          <img src="assets/img/Modelo3D.png">
+          <span>Información adicional</span>
+      </a>
+
+      <a class="card" href="recomendaciones.html" data-seccion="documentos">
+          <img src="assets/img/Logo.png">
+          <span>Informes técnicos</span>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="js/app.js"></script>
+
+<script src="js/login.js"></script>
+<script>
+  protegerPagina();
+</script>
+
+<footer class="marca-footer">
+  Aycardi Estructural © 2026
+</footer>
+
+</body>
+</html>

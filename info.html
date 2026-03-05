@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parámetros de Diseño</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <!-- Flecha atrás -->
+   <div class="header-left">
+    <button class="back" onclick="history.back()">←</button>
+    <button class="icon-btn" onclick="window.location.href='app.html'" title="Inicio">🏠</button>
+  </div>
+  <!-- Títulos -->
+  <div class="header-center">
+    <h1 id="tituloProyecto"></h1>
+    <h2 id="tituloSeccion">INFORMACIÓN ADICIONAL</h2>
+  </div>
+
+  <!-- Logo -->
+  <div class="header-right">
+    <img src="assets/img/LogoB.png" class="logo">
+  </div>
+</header>
+
+
+<main class="main-content">
+<section class="info-adicional">
+
+  <a id="btnBIM" class="btn bim" target="_blank" rel="noopener noreferrer" >
+    Ver modelo 3D (BIM Construction Cloud)
+  </a>
+
+  <h3>Informe de cantidades</h3>
+  <div id="cardInforme" class="card-recomendacion">
+    <div class="preview">
+      <canvas id="pdfPreviewInfo"></canvas>
+    </div>
+    <div class="info">
+      <h4>Informe de cantidades</h4>
+      <button id="btnVerInforme">Ver PDF</button>
+    </div>
+  </div>
+
+  <div id="visorOverlayInfo" class="visor-overlay" style="display:none;">
+    <div class="visor-header">
+      <span id="visorTituloInfo">Informe de cantidades</span>
+      <button onclick="cerrarVisorInfo()">✕</button>
+    </div>
+    <div class="visor-body">
+      <div id="pdfCanvasContainerInfo"></div>
+    </div>
+  </div>
+   
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+<script src="js/info.js"></script>
+
+<script src="js/login.js"></script>
+<script>
+  protegerPagina();
+</script>
+</main>
+
+<footer class="marca-footer">
+  Aycardi Estructural © 2026
+</footer>
+
+</body>
+
+<nav class="side-menu">
+  <a href="parametros.html" title="Parámetros">📋</a>
+  <a href="elementos.html?tipo=columnas" title="Columnas"><img src="assets/img/ICONOS/IcoColumna.png" width="20" height="30"></a>
+  <a href="elementos.html?tipo=vigas" title="Vigas"><img src="assets/img/ICONOS/IcoViga.png" width="20" height="30"></a>
+  <a href="elementos.html?tipo=muros" title="Muros"><img src="assets/img/ICONOS/IcoMuro.png" width="20" height="30"></a>
+  <a href="planos.html" title="Planos"><img src="assets/img/ICONOS/IcoPlano.png" width="20" height="30"></a>
+  <a href="recomendaciones.html" title="Recomendaciones"><img src="assets/img/ICONOS/IcoRecom.png" width="20" height="30"></a>
+</nav>
+
+</html>
+
