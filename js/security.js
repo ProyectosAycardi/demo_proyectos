@@ -22,27 +22,21 @@ if (new Date() > fechaExpiracion) {
 }
 
 // bloquear si no tiene acceso
-if (token !== tokenCorrecto) {
+if (!token) {
   document.documentElement.innerHTML =
     "<h1 style='text-align:center;margin-top:120px'>Acceso restringido</h1>";
   window.stop();
   throw new Error("Acceso bloqueado");
 }
 
-// PROPAGAR TOKEN A TODOS LOS LINKS
-document.addEventListener("DOMContentLoaded", () => {
+if (!params.get("demo")) {
 
-  document.querySelectorAll("a").forEach(link => {
+  params.set("demo", token);
 
-    const url = new URL(link.href, window.location.origin);
+  const nuevaURL =
+    window.location.pathname + "?" + params.toString();
 
-    if (!url.searchParams.has("demo")) {
-      url.searchParams.set("demo", token);
-      link.href = url.toString();
-    }
-
-  });
-
-});
+  window.location.replace(nuevaURL);
+}
 
 })();
