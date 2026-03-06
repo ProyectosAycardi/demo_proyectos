@@ -10,16 +10,20 @@ const fechaExpiracion = new Date("2026-03-07T00:00:00");
 const params = new URLSearchParams(window.location.search);
 const token = params.get("demo");
 
-// Bloqueo por token
-if (token !== tokenCorrecto) {
-  document.write("<h2 style='font-family:Arial;text-align:center;margin-top:120px'>Acceso restringido</h2>");
+if (token === tokenCorrecto) {
+  sessionStorage.setItem("demo_access", token);
+}
+
+const tokenGuardado = sessionStorage.getItem("demo_access");
+
+if (!tokenGuardado) {
+  document.write("<h2 style='text-align:center;margin-top:120px'>Acceso restringido</h2>");
   window.stop();
   throw new Error("Acceso bloqueado");
 }
 
-// Bloqueo por fecha
 if (new Date() > fechaExpiracion) {
-  document.write("<h2 style='font-family:Arial;text-align:center;margin-top:120px'>Demo expirada</h2>");
+  document.write("<h2 style='text-align:center;margin-top:120px'>Demo expirada</h2>");
   window.stop();
   throw new Error("Demo expirada");
 }

@@ -33,7 +33,13 @@ function login() {
     localStorage.setItem("autenticado", "true");
     localStorage.setItem("usuario", user);
     localStorage.setItem("rol", valido.rol)
-    window.location.href = "app.html";
+    const token = sessionStorage.getItem("demo_access");
+
+    if (token) {
+      window.location.href = "app.html?demo=" + token;
+    } else {
+      window.location.href = "app.html";
+    }
   } else {
     if (error) error.textContent = "Usuario o contraseña incorrectos";
   }
